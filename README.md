@@ -40,12 +40,18 @@ Create initial database and configure you qth coordinates
 ```
 python db_create.py
 nano -w app/config.json
+
+eg. { "qth_latitude": -26.285326291398476, "qth_longitude": 28.07064861167751}
 ```
 
 You can now start the test server. 
 
+If you need to change the default port 8080 used for the webserver edit the following file
+satserver.py and change the following line
+python satserver.pyapp.run(host='0.0.0.0', port=8090, debug=False)
 ```
-python satserver.py
+
+
 ```
 
 # Getting Started
